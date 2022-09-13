@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="13" passed="10" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-13T15:57:07 IST" name="Loan Dept" finished-at="2022-01-13T15:57:07 IST" duration-ms="164">
+    <groups>
+      <group name="San">
+        <method signature="HomeLoan.MobileHomeLogin()[pri:0, instance:test.HomeLoan@fa49800]" name="MobileHomeLogin" class="test.HomeLoan"/>
+        <method signature="HomeLoan.WebHomeLogin()[pri:0, instance:test.HomeLoan@fa49800]" name="WebHomeLogin" class="test.HomeLoan"/>
+      </group> <!-- San -->
+      <group name="Smoke">
+        <method signature="HomeLoan.GuestUserHome()[pri:0, instance:test.HomeLoan@fa49800]" name="GuestUserHome" class="test.HomeLoan"/>
+        <method signature="HomeLoan.MobileHomeLogin()[pri:0, instance:test.HomeLoan@fa49800]" name="MobileHomeLogin" class="test.HomeLoan"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2022-01-13T15:57:07 IST" name="Personal Loan" finished-at="2022-01-13T15:57:07 IST" duration-ms="86">
+      <class name="test.HomeLoan">
+        <test-method is-config="true" signature="prerequisite()[pri:0, instance:test.HomeLoan@fa49800]" started-at="2022-01-13T15:57:07 IST" name="prerequisite" finished-at="2022-01-13T15:57:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequisite -->
+        <test-method signature="GuestUserHome()[pri:0, instance:test.HomeLoan@fa49800]" started-at="2022-01-13T15:57:07 IST" name="GuestUserHome" finished-at="2022-01-13T15:57:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GuestUserHome -->
+        <test-method signature="MobileHomeLogin()[pri:0, instance:test.HomeLoan@fa49800]" started-at="2022-01-13T15:57:07 IST" name="MobileHomeLogin" finished-at="2022-01-13T15:57:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileHomeLogin -->
+        <test-method signature="MobileHomeSecond(java.lang.String)[pri:0, instance:test.HomeLoan@fa49800]" started-at="2022-01-13T15:57:07 IST" name="MobileHomeSecond" finished-at="2022-01-13T15:57:07 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[www.bishal.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileHomeSecond -->
+        <test-method signature="WebHomeLogin()[pri:0, instance:test.HomeLoan@fa49800]" started-at="2022-01-13T15:57:07 IST" name="WebHomeLogin" finished-at="2022-01-13T15:57:07 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebHomeLogin -->
+      </class> <!-- test.HomeLoan -->
+      <class name="test.Tut2">
+        <test-method signature="Demo3()[pri:0, instance:test.Tut2@662b4c69]" started-at="2022-01-13T15:57:07 IST" name="Demo3" finished-at="2022-01-13T15:57:07 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Demo3 -->
+      </class> <!-- test.Tut2 -->
+      <class name="test.Tut1">
+        <test-method is-config="true" signature="bfclass()[pri:0, instance:test.Tut1@10d307f1]" started-at="2022-01-13T15:57:07 IST" name="bfclass" finished-at="2022-01-13T15:57:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bfclass -->
+        <test-method is-config="true" signature="bfmethod()[pri:0, instance:test.Tut1@10d307f1]" started-at="2022-01-13T15:57:07 IST" name="bfmethod" finished-at="2022-01-13T15:57:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bfmethod -->
+        <test-method signature="Demo1()[pri:0, instance:test.Tut1@10d307f1]" started-at="2022-01-13T15:57:07 IST" name="Demo1" finished-at="2022-01-13T15:57:07 IST" duration-ms="7" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at test.Tut1.Demo1(Tut1.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Demo1 -->
+        <test-method is-config="true" signature="bfmethod()[pri:0, instance:test.Tut1@10d307f1]" started-at="2022-01-13T15:57:07 IST" name="bfmethod" finished-at="2022-01-13T15:57:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bfmethod -->
+        <test-method signature="Demo2()[pri:0, instance:test.Tut1@10d307f1]" started-at="2022-01-13T15:57:07 IST" name="Demo2" finished-at="2022-01-13T15:57:07 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Demo2 -->
+        <test-method is-config="true" signature="exitStep()[pri:0, instance:test.Tut1@10d307f1]" started-at="2022-01-13T15:57:07 IST" name="exitStep" finished-at="2022-01-13T15:57:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exitStep -->
+      </class> <!-- test.Tut1 -->
+    </test> <!-- Personal Loan -->
+    <test started-at="2022-01-13T15:57:07 IST" name="Car Loan" finished-at="2022-01-13T15:57:07 IST" duration-ms="21">
+      <class name="test.CarLoan">
+        <test-method is-config="true" signature="bfSuite()[pri:0, instance:test.CarLoan@3c7f66c4]" started-at="2022-01-13T15:57:07 IST" name="bfSuite" finished-at="2022-01-13T15:57:07 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bfSuite -->
+        <test-method signature="GuestUserCar()[pri:0, instance:test.CarLoan@3c7f66c4]" started-at="2022-01-13T15:57:07 IST" name="GuestUserCar" finished-at="2022-01-13T15:57:07 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GuestUserCar -->
+        <test-method signature="WebCarLogin(java.lang.String,java.lang.String)[pri:0, instance:test.CarLoan@3c7f66c4]" started-at="2022-01-13T15:57:07 IST" name="WebCarLogin" data-provider="getData" finished-at="2022-01-13T15:57:07 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[un1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pw1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebCarLogin -->
+        <test-method signature="WebCarLogin(java.lang.String,java.lang.String)[pri:0, instance:test.CarLoan@3c7f66c4]" started-at="2022-01-13T15:57:07 IST" name="WebCarLogin" data-provider="getData" finished-at="2022-01-13T15:57:07 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[un2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pw2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebCarLogin -->
+        <test-method signature="WebCarLogin(java.lang.String,java.lang.String)[pri:0, instance:test.CarLoan@3c7f66c4]" started-at="2022-01-13T15:57:07 IST" name="WebCarLogin" data-provider="getData" finished-at="2022-01-13T15:57:07 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[un3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pw3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebCarLogin -->
+      </class> <!-- test.CarLoan -->
+      <class name="test.Tut2">
+        <test-method is-config="true" signature="afSuite()[pri:0, instance:test.Tut2@662b4c69]" started-at="2022-01-13T15:57:07 IST" name="afSuite" finished-at="2022-01-13T15:57:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afSuite -->
+      </class> <!-- test.Tut2 -->
+    </test> <!-- Car Loan -->
+  </suite> <!-- Loan Dept -->
+</testng-results>
