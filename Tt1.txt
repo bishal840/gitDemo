@@ -1,2 +1,4 @@
 Hi
 new added file
+
+and a new text is now added by gitDemo
